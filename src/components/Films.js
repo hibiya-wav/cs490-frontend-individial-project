@@ -69,17 +69,24 @@ export const Films = () => {
     const rentMovieOperation = async (customerId) => {
         try {
             const res = await axios.get(`http://localhost:8080/api/queries/customerinfo/${customerId}`);
+            const data = res.data
             const isValidCustomer = res.data !== undefined;
 
             if (isValidCustomer) {
-                alert(`Movie rented to Customer ID ${customerData}`);
+                alert(`Movie rented to ${titleCase(data.first_name)} ${titleCase(data.last_name)}\nCustomer ID: ${customerData}`);
             } else {
                 alert("Error renting the movie. Please try again.");
             }
         } catch (error) {
-            alert("Error checking customer ID or renting the movie. Please try again.");
+            alert("Error renting the film. Please ensure that the customer ID is valid and try again later.");
         }
     };
+
+    function titleCase(str) {
+        return str.toLowerCase().split(' ').map(function(word) {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join(' ');
+    }
 
     return (
         <div style={{height: '100vh', paddingTop: '80px'}}>
@@ -144,6 +151,7 @@ export const Films = () => {
                         <h2>{filmClick.title}</h2>
                         <p>Description: {filmClick.description}</p>
                         <p>Release Year: {filmClick.release_year}</p>
+                        <p>Length: {filmClick.length}</p>
                         <p>Rental Rate: {filmClick.rental_rate}</p>
                         <p>Replacement Cost: {filmClick.replacement_cost}</p>
                         <p>Special Features: {filmClick.special_features}</p>

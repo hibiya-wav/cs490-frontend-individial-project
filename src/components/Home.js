@@ -114,11 +114,11 @@ export const Home = () => {
                 {selectedActor && (
                     <div className="box-details-modal">
                         <div className="modal-content">
-                            <h2>Actor Details</h2>
+                            <h2 style={{textAlign: 'center', paddingLeft: '10px'}}>Actor Details</h2>
                             {selectedActor.slice(0, 1).map((actor) => (
-                                <p>Actor Name: {actor.first_name} {actor.last_name}</p>
+                                <p style={{textAlign: 'center'}}>Actor Name: {actor.first_name} {actor.last_name}</p>
                             ))}
-                            <p>Top Films Rented where this Actor starred in:</p>
+                            <p>Top 5 Films Rented Where This Actor Stars In</p>
                             <ol>
                                 {selectedActor.slice(0, 5).map((film, index) => (
                                     <li key={film.title}><span>{index + 1}.</span>{film.title}</li>
