@@ -27,11 +27,25 @@ export const Films = () => {
     }, []);
 
     const searchingTitle = () => {
+
+        // regex to check if searchTermActor contains only letters or is empty.
+        if (!/^[a-zA-Z\s]*$/.test(searchTerm)) {
+            alert("Invalid input: The search term should not contain numbers or special characters.");
+            return;
+        }
+
         const filteredData = data.filter(film => film.title.toLowerCase().includes(searchTerm.toLowerCase()));
         setFilteredData(filteredData);
     };
 
     const searchingActorFilm = async () => {
+
+        // regex to check if searchTermActor contains only letters or is empty.
+        if (!/^[a-zA-Z\s]*$/.test(searchTermActor)) {
+            alert("Invalid input: The search term should not contain numbers or special characters.");
+            return;
+        }
+
         try {
             const res = await axios.get(`http://localhost:8080/api/queries/films/actors/${searchTermActor}`);
             setFilteredData(res.data);
@@ -41,11 +55,18 @@ export const Films = () => {
     };
 
     const searchingGenreFilm = async () => {
+
+        // regex to check if searchTermActor contains only letters or is empty.
+        if (!/^[a-zA-Z\s]*$/.test(searchTermGenre)) {
+            alert("Invalid input: The search term should not contain numbers or special characters.");
+            return;
+        }
+
         try {
             const res = await axios.get(`http://localhost:8080/api/queries/films/genre/${searchTermGenre}`);
             setFilteredData(res.data);
         } catch (error) {
-            console.error('Error searching actor:', error);
+            console.error('Error searching genre:', error);
         }
     };
 
@@ -67,8 +88,16 @@ export const Films = () => {
 
 
     const rentMovieOperation = async (customerId) => {
+
+        const numericRegex = /^[0-9]+$/;
+
+        if (!numericRegex.test(customerId)) {
+            alert("Error: Customer ID should contain only numbers.");
+            return;
+        }
+
         try {
-            const res = await axios.get(`http://localhost:8080/api/queries/customerinfo/${customerId}`);
+            const res = await axios.get(`http://localhost:8080/api/queries/customerinfospec/${customerId}`);
             const data = res.data
             const isValidCustomer = res.data !== undefined;
 

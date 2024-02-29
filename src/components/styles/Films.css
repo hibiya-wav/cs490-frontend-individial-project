@@ -37,7 +37,6 @@ th {
     justify-content: center;
 }
 
-/* Rounded container styling */
 .rounded-container {
     display: flex;
     border-radius: 8px;
@@ -74,10 +73,10 @@ th {
     border-radius: 8px;
     cursor: pointer;
 }
+
 .outsideReset:hover {
     background-color: #45a049;
 }
-
 
 .centerReset {
     display: flex;

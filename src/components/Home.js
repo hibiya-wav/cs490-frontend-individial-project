@@ -34,21 +34,21 @@ export const Home = () => {
 
     const filmButtonClickFUNC = async (filmId) => {
         try {
-            console.log('Film ID:', filmId); // Log the filmId value
+            console.log('Film ID:', filmId);
             const res = await axios.get(`http://localhost:8080/api/queries/top5films/${filmId}`);
             setSelectedFilm(res.data);
         } catch (error) {
-            console.error('Error fetching Film details:', error.response); // Log the error response
+            console.error('Error fetching Film details:', error.response);
         }
     };
 
     const actorButtonClickFUNC = async (actorId) => {
         try {
-            console.log('Actor ID:', actorId); // Log the filmId value
+            console.log('Actor ID:', actorId);
             const res = await axios.get(`http://localhost:8080/api/queries/top5actors/${actorId}`);
             setSelectedActor(res.data);
         } catch (error) {
-            console.error('Error fetching Actor details:', error.response); // Log the error response
+            console.error('Error fetching Actor details:', error.response);
         }
     };
 
@@ -125,7 +125,6 @@ export const Home = () => {
                                 ))}
                             </ol>
                             <div className="button-container">
-                                {/*// center this button*/}
                                 <button onClick={closeActorDetailsWindow}>Close</button>
                             </div>
                         </div>

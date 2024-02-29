@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="042b2fb6-21f1-4e8a-994b-63867140e962" name="Changes" comment="" />
+    <list default="true" id="042b2fb6-21f1-4e8a-994b-63867140e962" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Customers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Films.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/Films.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/Films.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/PopupPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/PopupPage.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +38,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/danny/Desktop/individual-project-milestone-2/cs490-frontend-individial-project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,6 +87,11 @@
       <workItem from="1707269811129" duration="8553000" />
       <workItem from="1707349572687" duration="622000" />
       <workItem from="1707363791051" duration="1806000" />
+      <workItem from="1708803030992" duration="6875000" />
+      <workItem from="1708878284170" duration="4425000" />
+      <workItem from="1708917242353" duration="5169000" />
+      <workItem from="1709162241015" duration="7288000" />
+      <workItem from="1709177391482" duration="1728000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ function App() {
     const [footerValue, setFooter] = useState(true);
 
     useEffect(() => {
-        if (relativeLocation.pathname === '/films') {
+        if (relativeLocation.pathname === '/films' || relativeLocation.pathname === '/customers') {
             setFooter(false);
         } else {
             setFooter(true);
